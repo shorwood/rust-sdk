@@ -150,7 +150,6 @@ impl<'de> Deserialize<'de> for ProtocolVersion {
 }
 
 #[derive(Debug, Clone, Eq, PartialEq, Hash)]
-#[cfg_attr(feature = "schemars", derive(schemars::JsonSchema))]
 pub enum NumberOrString {
     Number(u32),
     String(Arc<str>),
@@ -200,6 +199,32 @@ impl<'de> Deserialize<'de> for NumberOrString {
             Value::String(s) => Ok(NumberOrString::String(s.into())),
             _ => Err(serde::de::Error::custom("Expect number or string")),
         }
+    }
+}
+
+#[cfg(feature = "schemars")]
+impl schemars::JsonSchema for NumberOrString {
+    fn schema_name() -> String {
+        "NumberOrString".to_string()
+    }
+
+    fn json_schema(_: &mut schemars::SchemaGenerator) -> schemars::schema::Schema {
+        schemars::schema::Schema::Object(schemars::schema::SchemaObject {
+            subschemas: Some(Box::new(schemars::schema::SubschemaValidation {
+                one_of: Some(vec![
+                    schemars::schema::Schema::Object(schemars::schema::SchemaObject {
+                        instance_type: Some(schemars::schema::InstanceType::Number.into()),
+                        ..Default::default()
+                    }),
+                    schemars::schema::Schema::Object(schemars::schema::SchemaObject {
+                        instance_type: Some(schemars::schema::InstanceType::String.into()),
+                        ..Default::default()
+                    }),
+                ]),
+                ..Default::default()
+            })),
+            ..Default::default()
+        })
     }
 }
 

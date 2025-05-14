@@ -966,30 +966,10 @@
     "NumberOrString": {
       "oneOf": [
         {
-          "type": "object",
-          "required": [
-            "Number"
-          ],
-          "properties": {
-            "Number": {
-              "type": "integer",
-              "format": "uint32",
-              "minimum": 0.0
-            }
-          },
-          "additionalProperties": false
+          "type": "number"
         },
         {
-          "type": "object",
-          "required": [
-            "String"
-          ],
-          "properties": {
-            "String": {
-              "type": "string"
-            }
-          },
-          "additionalProperties": false
+          "type": "string"
         }
       ]
     },
