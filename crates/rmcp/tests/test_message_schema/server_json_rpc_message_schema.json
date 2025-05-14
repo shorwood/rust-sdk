@@ -455,7 +455,6 @@
         }
       }
     },
-    "Extensions": true,
     "GetPromptResult": {
       "type": "object",
       "required": [
@@ -810,18 +809,9 @@
     "NotificationNoParam_for_PromptListChangedNotificationMethod": {
       "type": "object",
       "required": [
-        "extensions",
         "method"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/PromptListChangedNotificationMethod"
         }
@@ -830,18 +820,9 @@
     "NotificationNoParam_for_ResourceListChangedNotificationMethod": {
       "type": "object",
       "required": [
-        "extensions",
         "method"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/ResourceListChangedNotificationMethod"
         }
@@ -850,18 +831,9 @@
     "NotificationNoParam_for_ToolListChangedNotificationMethod": {
       "type": "object",
       "required": [
-        "extensions",
         "method"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/ToolListChangedNotificationMethod"
         }
@@ -870,19 +842,10 @@
     "Notification_for_CancelledNotificationMethod_and_CancelledNotificationParam": {
       "type": "object",
       "required": [
-        "extensions",
         "method",
         "params"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/CancelledNotificationMethod"
         },
@@ -894,19 +857,10 @@
     "Notification_for_LoggingMessageNotificationMethod_and_LoggingMessageNotificationParam": {
       "type": "object",
       "required": [
-        "extensions",
         "method",
         "params"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/LoggingMessageNotificationMethod"
         },
@@ -918,19 +872,10 @@
     "Notification_for_ProgressNotificationMethod_and_ProgressNotificationParam": {
       "type": "object",
       "required": [
-        "extensions",
         "method",
         "params"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/ProgressNotificationMethod"
         },
@@ -942,19 +887,10 @@
     "Notification_for_ResourceUpdatedNotificationMethod_and_ResourceUpdatedNotificationParam": {
       "type": "object",
       "required": [
-        "extensions",
         "method",
         "params"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/ResourceUpdatedNotificationMethod"
         },
@@ -1221,18 +1157,9 @@
     "RequestNoParam_for_ListRootsRequestMethod": {
       "type": "object",
       "required": [
-        "extensions",
         "method"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/ListRootsRequestMethod"
         }
@@ -1241,18 +1168,9 @@
     "RequestNoParam_for_PingRequestMethod": {
       "type": "object",
       "required": [
-        "extensions",
         "method"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/PingRequestMethod"
         }
@@ -1261,19 +1179,10 @@
     "Request_for_CreateMessageRequestMethod_and_CreateMessageRequestParam": {
       "type": "object",
       "required": [
-        "extensions",
         "method",
         "params"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/CreateMessageRequestMethod"
         },
