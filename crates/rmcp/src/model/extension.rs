@@ -279,6 +279,16 @@ impl fmt::Debug for Extensions {
     }
 }
 
+impl schemars::JsonSchema for Extensions {
+    fn schema_name() -> String {
+        "Extensions".to_string()
+    }
+
+    fn json_schema(generator: &mut schemars::SchemaGenerator) -> schemars::schema::Schema {
+        generator.subschema_for::<serde_json::Value>()
+    }
+}
+
 trait AnyClone: Any {
     fn clone_box(&self) -> Box<dyn AnyClone + Send + Sync>;
     fn as_any(&self) -> &dyn Any;
