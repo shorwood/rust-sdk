@@ -243,6 +243,7 @@ pub struct Request<M = String, P = JsonObject> {
     /// extensions will carry anything possible in the context, including [`Meta`]
     ///
     /// this is similar with the Extensions in `http` crate
+    #[cfg_attr(feature = "schemars", schemars(skip))]
     pub extensions: Extensions,
 }
 
@@ -264,6 +265,7 @@ pub struct RequestOptionalParam<M = String, P = JsonObject> {
     /// extensions will carry anything possible in the context, including [`Meta`]
     ///
     /// this is similar with the Extensions in `http` crate
+    #[cfg_attr(feature = "schemars", schemars(skip))]
     pub extensions: Extensions,
 }
 
@@ -274,6 +276,7 @@ pub struct RequestNoParam<M = String> {
     /// extensions will carry anything possible in the context, including [`Meta`]
     ///
     /// this is similar with the Extensions in `http` crate
+    #[cfg_attr(feature = "schemars", schemars(skip))]
     pub extensions: Extensions,
 }
 
@@ -293,6 +296,7 @@ pub struct Notification<M = String, P = JsonObject> {
     /// extensions will carry anything possible in the context, including [`Meta`]
     ///
     /// this is similar with the Extensions in `http` crate
+    #[cfg_attr(feature = "schemars", schemars(skip))]
     pub extensions: Extensions,
 }
 
@@ -303,6 +307,7 @@ pub struct NotificationNoParam<M = String> {
     /// extensions will carry anything possible in the context, including [`Meta`]
     ///
     /// this is similar with the Extensions in `http` crate
+    #[cfg_attr(feature = "schemars", schemars(skip))]
     pub extensions: Extensions,
 }
 

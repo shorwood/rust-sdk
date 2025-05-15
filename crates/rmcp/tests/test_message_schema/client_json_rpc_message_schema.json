@@ -341,7 +341,6 @@
         }
       }
     },
-    "Extensions": true,
     "GetPromptRequestMethod": {
       "type": "string",
       "format": "const",
@@ -603,18 +602,9 @@
     "NotificationNoParam_for_InitializedNotificationMethod": {
       "type": "object",
       "required": [
-        "extensions",
         "method"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/InitializedNotificationMethod"
         }
@@ -623,18 +613,9 @@
     "NotificationNoParam_for_RootsListChangedNotificationMethod": {
       "type": "object",
       "required": [
-        "extensions",
         "method"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/RootsListChangedNotificationMethod"
         }
@@ -643,19 +624,10 @@
     "Notification_for_CancelledNotificationMethod_and_CancelledNotificationParam": {
       "type": "object",
       "required": [
-        "extensions",
         "method",
         "params"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/CancelledNotificationMethod"
         },
@@ -667,19 +639,10 @@
     "Notification_for_ProgressNotificationMethod_and_ProgressNotificationParam": {
       "type": "object",
       "required": [
-        "extensions",
         "method",
         "params"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/ProgressNotificationMethod"
         },
@@ -815,18 +778,9 @@
     "RequestNoParam_for_PingRequestMethod": {
       "type": "object",
       "required": [
-        "extensions",
         "method"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/PingRequestMethod"
         }
@@ -835,18 +789,9 @@
     "RequestOptionalParam_for_ListPromptsRequestMethod_and_PaginatedRequestParam": {
       "type": "object",
       "required": [
-        "extensions",
         "method"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/ListPromptsRequestMethod"
         },
@@ -865,18 +810,9 @@
     "RequestOptionalParam_for_ListResourceTemplatesRequestMethod_and_PaginatedRequestParam": {
       "type": "object",
       "required": [
-        "extensions",
         "method"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/ListResourceTemplatesRequestMethod"
         },
@@ -895,18 +831,9 @@
     "RequestOptionalParam_for_ListResourcesRequestMethod_and_PaginatedRequestParam": {
       "type": "object",
       "required": [
-        "extensions",
         "method"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/ListResourcesRequestMethod"
         },
@@ -925,18 +852,9 @@
     "RequestOptionalParam_for_ListToolsRequestMethod_and_PaginatedRequestParam": {
       "type": "object",
       "required": [
-        "extensions",
         "method"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/ListToolsRequestMethod"
         },
@@ -955,19 +873,10 @@
     "Request_for_CallToolRequestMethod_and_CallToolRequestParam": {
       "type": "object",
       "required": [
-        "extensions",
         "method",
         "params"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/CallToolRequestMethod"
         },
@@ -979,19 +888,10 @@
     "Request_for_CompleteRequestMethod_and_CompleteRequestParam": {
       "type": "object",
       "required": [
-        "extensions",
         "method",
         "params"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/CompleteRequestMethod"
         },
@@ -1003,19 +903,10 @@
     "Request_for_GetPromptRequestMethod_and_GetPromptRequestParam": {
       "type": "object",
       "required": [
-        "extensions",
         "method",
         "params"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/GetPromptRequestMethod"
         },
@@ -1027,19 +918,10 @@
     "Request_for_InitializeResultMethod_and_InitializeRequestParam": {
       "type": "object",
       "required": [
-        "extensions",
         "method",
         "params"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/InitializeResultMethod"
         },
@@ -1051,19 +933,10 @@
     "Request_for_ReadResourceRequestMethod_and_ReadResourceRequestParam": {
       "type": "object",
       "required": [
-        "extensions",
         "method",
         "params"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/ReadResourceRequestMethod"
         },
@@ -1075,19 +948,10 @@
     "Request_for_SetLevelRequestMethod_and_SetLevelRequestParam": {
       "type": "object",
       "required": [
-        "extensions",
         "method",
         "params"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/SetLevelRequestMethod"
         },
@@ -1099,19 +963,10 @@
     "Request_for_SubscribeRequestMethod_and_SubscribeRequestParam": {
       "type": "object",
       "required": [
-        "extensions",
         "method",
         "params"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/SubscribeRequestMethod"
         },
@@ -1123,19 +978,10 @@
     "Request_for_UnsubscribeRequestMethod_and_UnsubscribeRequestParam": {
       "type": "object",
       "required": [
-        "extensions",
         "method",
         "params"
       ],
       "properties": {
-        "extensions": {
-          "description": "extensions will carry anything possible in the context, including [`Meta`]\n\nthis is similar with the Extensions in `http` crate",
-          "allOf": [
-            {
-              "$ref": "#/definitions/Extensions"
-            }
-          ]
-        },
         "method": {
           "$ref": "#/definitions/UnsubscribeRequestMethod"
         },
